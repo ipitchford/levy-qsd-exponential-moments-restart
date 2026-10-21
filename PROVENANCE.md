@@ -1,0 +1,8 @@
+# Provenance
+
+* Scholarly creator: **Anonymous** (standing Evidence Press attribution). No human research contribution is claimed or inferred.
+* Publisher: Evidence Press (https://evidencepress.org). Repository maintenance and publication operations: the Evidence Press publishing workflow under the repository owner's account; this is not authorship.
+* Production: AI-assisted research. Large language model-based tools were used extensively to develop the proofs, computations and text. Internal AI-assisted review in several roles, an AI-assisted adversarial review by a different model (OpenAI gpt-5.6-sol) and a verification re-review were used to find errors. Their substantive points and responses are summarised in [REVIEW_SUMMARY.md](REVIEW_SUMMARY.md); the original reports are kept privately.
+* Target: Garcia, Bermolen, Jonckheere and Shneer, Stochastic Systems 16(3), 264–288 (2026), doi:10.1287/stsy.2025.0108; the open version arXiv:2503.03565v3 is quoted with attribution. Third-party texts are not redistributed.
+* History: the manuscript was revised on 21 October 2026 in response to the internal reviews. Only this version is published.
+* Publication edit: at publication the reserved DOI and version were inserted in the manuscript, README and metadata, the PDF was rebuilt, the release records (STATUS, ASSURANCE, PROVENANCE, AI_INDEX, CLAIMS, RESEARCH_GATES, REVIEW_SUMMARY, licences, citation and Zenodo metadata, ENVIRONMENT, requirements, CI workflow) and `negative_controls.py` were added, and SHA256SUMS was regenerated. Check scripts and their outputs were compared by hash with an independent clean replay copy.

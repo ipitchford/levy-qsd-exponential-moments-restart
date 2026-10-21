@@ -1,0 +1,313 @@
+{
+  "brownian_identities": [
+    {
+      "drift": 1.0,
+      "length": 1.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 1.0
+    },
+    {
+      "drift": 1.0,
+      "length": 3.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 1.0
+    },
+    {
+      "drift": 1.0,
+      "length": 10.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 1.0
+    },
+    {
+      "drift": 1.0,
+      "length": 30.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 1.0
+    },
+    {
+      "drift": 0.5,
+      "length": 1.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 1.3
+    },
+    {
+      "drift": 0.5,
+      "length": 3.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 1.3
+    },
+    {
+      "drift": 0.5,
+      "length": 10.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 1.3
+    },
+    {
+      "drift": 0.5,
+      "length": 30.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 1.3
+    },
+    {
+      "drift": 2.0,
+      "length": 1.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 0.7
+    },
+    {
+      "drift": 2.0,
+      "length": 3.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 0.7
+    },
+    {
+      "drift": 2.0,
+      "length": 10.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 0.7
+    },
+    {
+      "drift": 2.0,
+      "length": 30.0,
+      "log_moment_residual": "<1e-10",
+      "sigma": 0.7
+    }
+  ],
+  "exact_rational_lattice_checks": [
+    {
+      "centred_matrix": [
+        [
+          "-5",
+          "1"
+        ],
+        [
+          "3",
+          "-5"
+        ]
+      ],
+      "characteristic_polynomial": [
+        "1",
+        "10",
+        "22"
+      ],
+      "n": 2
+    },
+    {
+      "centred_matrix": [
+        [
+          "-5",
+          "1",
+          "1"
+        ],
+        [
+          "3",
+          "-5",
+          "1"
+        ],
+        [
+          "0",
+          "3",
+          "-5"
+        ]
+      ],
+      "characteristic_polynomial": [
+        "1",
+        "15",
+        "69",
+        "86"
+      ],
+      "n": 3
+    },
+    {
+      "centred_matrix": [
+        [
+          "-5",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "3",
+          "-5",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "3",
+          "-5",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "3",
+          "-5"
+        ]
+      ],
+      "characteristic_polynomial": [
+        "1",
+        "20",
+        "141",
+        "392",
+        "319"
+      ],
+      "n": 4
+    },
+    {
+      "centred_matrix": [
+        [
+          "-5",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "3",
+          "-5",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "3",
+          "-5",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "3",
+          "-5",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "3",
+          "-5"
+        ]
+      ],
+      "characteristic_polynomial": [
+        "1",
+        "25",
+        "238",
+        "1043",
+        "1982",
+        "1139"
+      ],
+      "n": 5
+    }
+  ],
+  "lattice_diagnostics": [
+    {
+      "eigen_residual": "<1e-10",
+      "length": 16,
+      "limiting_moment_rate": 0.5942864353,
+      "limiting_scaled_rate": 39.4784176,
+      "log_moment_per_length": 0.6013666084,
+      "n": 15,
+      "scaled_killing_rate": 38.07773965,
+      "sine_total_variation": 0.01934216248
+    },
+    {
+      "eigen_residual": "<1e-10",
+      "length": 32,
+      "limiting_moment_rate": 0.5942864353,
+      "limiting_scaled_rate": 39.4784176,
+      "log_moment_per_length": 0.5989007652,
+      "n": 31,
+      "scaled_killing_rate": 38.81948282,
+      "sine_total_variation": 0.009906630115
+    },
+    {
+      "eigen_residual": "<1e-10",
+      "length": 64,
+      "limiting_moment_rate": 0.5942864353,
+      "limiting_scaled_rate": 39.4784176,
+      "log_moment_per_length": 0.5968779477,
+      "n": 63,
+      "scaled_killing_rate": 39.15943877,
+      "sine_total_variation": 0.005028791546
+    },
+    {
+      "eigen_residual": "<1e-10",
+      "length": 128,
+      "limiting_moment_rate": 0.5942864353,
+      "limiting_scaled_rate": 39.4784176,
+      "log_moment_per_length": 0.5956553336,
+      "n": 127,
+      "scaled_killing_rate": 39.32156321,
+      "sine_total_variation": 0.002533826599
+    },
+    {
+      "eigen_residual": "<1e-10",
+      "length": 256,
+      "limiting_moment_rate": 0.5942864353,
+      "limiting_scaled_rate": 39.4784176,
+      "log_moment_per_length": 0.5949894362,
+      "n": 255,
+      "scaled_killing_rate": 39.40065048,
+      "sine_total_variation": 0.00127184562
+    }
+  ],
+  "saturation_counterexample": [
+    {
+      "budget": 403.4287935,
+      "length": 4.0,
+      "predicted_ratio": 0.1353352832,
+      "restart_probability": 0.9971659772,
+      "source_normalised_ratio": 0.13495174
+    },
+    {
+      "budget": 162754.7914,
+      "length": 8.0,
+      "predicted_ratio": 0.01831563889,
+      "restart_probability": 1.0,
+      "source_normalised_ratio": 0.01831563889
+    },
+    {
+      "budget": 65659969.14,
+      "length": 12.0,
+      "predicted_ratio": 0.002478752177,
+      "restart_probability": 1.0,
+      "source_normalised_ratio": 0.002478752177
+    },
+    {
+      "budget": 26489122130.0,
+      "length": 16.0,
+      "predicted_ratio": 0.0003354626279,
+      "restart_probability": 1.0,
+      "source_normalised_ratio": 0.0003354626279
+    },
+    {
+      "budget": 4311231547000000.0,
+      "length": 24.0,
+      "predicted_ratio": 6.144212353e-06,
+      "restart_probability": 1.0,
+      "source_normalised_ratio": 6.144212353e-06
+    },
+    {
+      "budget": 7.016735912e+20,
+      "length": 32.0,
+      "predicted_ratio": 1.125351747e-07,
+      "restart_probability": 1.0,
+      "source_normalised_ratio": 1.125351747e-07
+    }
+  ],
+  "scope": "finite arithmetic checks and numerical diagnostics only; analytic proof is separate",
+  "source_example": {
+    "derivative_residual": "<1e-10",
+    "eigenvalue_correction": 11.7415999,
+    "eta": 0.9411500743,
+    "lambda_star": 2.0,
+    "limiting_killing_rate": 1.337430736,
+    "moment_exponent": 1.058849926,
+    "tilted_variance": 2.3793456
+  },
+  "status": "PASS"
+}

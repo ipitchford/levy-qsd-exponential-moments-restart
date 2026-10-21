@@ -1,0 +1,26 @@
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Check SHA256SUMS
+        run: sha256sum -c SHA256SUMS
+      - name: Standard-library constants (two formulas for C*), byte for byte
+        run: |
+          python -B double_exponential_prefactor.py --out /tmp/q > /dev/null
+          cmp /tmp/q/prefactor_decimal.txt checks/prefactor_decimal.txt
+      - name: Semantic negative controls
+        run: python -B -O negative_controls.py
+      - name: Install packages
+        run: python -m pip install -r requirements.txt
+      - name: Interval enclosure of C* and R*, byte for byte
+        run: |
+          python -B e4_ratio_one.py --out /tmp/q > /dev/null
+          cmp /tmp/q/e4_ratio_one.json checks/e4_ratio_one.json

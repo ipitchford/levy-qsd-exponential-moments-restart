@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Exact exponential moments of interval quasi-stationary laws for Lévy processes, and the saturation of idealised QSD restart"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23545672
+date-released: 2026-10-21
+repository-code: "https://github.com/ipitchford/levy-qsd-exponential-moments-restart"
+url: "https://evidencepress.org/releases/levy-qsd-exponential-moments-restart/"
+license: CC0-1.0
+keywords:
+  - quasi-stationary distribution
+  - Lévy processes
+  - rare-event simulation
+  - restart
+  - Wiener–Hopf factorisation
+  - ladder heights
+abstract: "Garcia, Bermolen, Jonckheere and Shneer (Stochastic Systems, 2026) conjectured that the exponential moment governing idealised restart from a quasi-stationary distribution (QSD) on (0, L) grows like exp((lambda*-eta)L). For Lévy processes with a Gaussian component and jumps of either sign, this candidate proves exact normalised limits of every exponential moment of the interval QSD, via exact L^-2 asymptotics of the two boundary layers of the Esscher-centred QSD. The conjecture holds up to an explicit constant C*, but its ratio-one reading fails: C* < 1 for spectrally negative processes with jumps, C* > 1 for spectrally positive ones, and C* = 0.85014864899... in the source model (interval arithmetic). Idealised QSD restart has rate ~ R* exp(-eta L) and saturates uniformly in relative error, so the linear budget regime of the source's restart theorem is B = O(exp(eta L)), not o(exp(lambda* L)). Unrefereed candidate. Original code is MIT-licensed; see LICENSES.md."
+references:
+  - type: article
+    title: "Efficiency of parallel and restart exploration strategies in model-free stochastic simulations"
+    authors:
+      - family-names: Garcia
+        given-names: E.
+      - family-names: Bermolen
+        given-names: P.
+      - family-names: Jonckheere
+        given-names: M.
+      - family-names: Shneer
+        given-names: S.
+    journal: "Stochastic Systems"
+    volume: 16
+    year: 2026
+    doi: 10.1287/stsy.2025.0108

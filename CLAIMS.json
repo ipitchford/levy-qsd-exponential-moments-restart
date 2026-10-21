@@ -1,0 +1,124 @@
+{
+ "schemaVersion": "1.0",
+ "release": "levy-qsd-exponential-moments-restart",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23545672",
+ "conceptDoi": "10.5281/zenodo.23545671",
+ "creator": "Anonymous",
+ "status": "unrefereed-candidate",
+ "manuscript": "levy_qsd_restart.pdf",
+ "sources": [
+  {
+   "citation": "Garcia, Bermolen, Jonckheere and Shneer, Efficiency of parallel and restart exploration strategies in model-free stochastic simulations, Stochastic Systems 16(3), 264-288 (2026)",
+   "doi": "10.1287/stsy.2025.0108",
+   "openVersion": "arXiv:2503.03565v3",
+   "conjecture": "paragraph after Corollary 3.15 (arXiv v3); restart theorem Theorem 3.14 (journal Theorem 4); restart law Lemma 6.2 (journal Lemma 5); faulty step Proof 6.4"
+  }
+ ],
+ "boundary": "'proof' means a complete written proof in the manuscript, not formal verification; 'certified' means exact rational or outward-rounded interval arithmetic for the stated constants of one model; 'numerical' is deterministic high-precision computation, not an enclosure; 'exploratory' is a conjecture supported by computation. Internal AI-assisted review is not peer review or independent reproduction.",
+ "claims": [
+  {
+   "id": "endpoint-masses",
+   "location": "Theorem 2.3, Section 4",
+   "status": "proof",
+   "statement": "For every b>0, L^2 A_L(-b) -> K_ell(b) and L^2 e^{-bL} A_L(b) -> K_r(b), where A_L is the Laplace transform of the Esscher-centred QSD on (0,L), K_ell(b)=pi^2 m_+/(2 b phi_+(b)), K_r(b)=pi^2 m_-/(2 b phi_-(b)).",
+   "evidence": [
+    "levy_qsd_restart.pdf",
+    "manuscript_constant_check.py",
+    "checks/manuscript_constant_check.json (finite-L consistency)"
+   ]
+  },
+  {
+   "id": "exponential-moments",
+   "location": "Theorem 2.2, Section 5",
+   "status": "proof",
+   "statement": "M_L(theta) -> K_ell(eta-theta)/K_ell(eta) (theta<eta); M_L(eta)/L^2 -> 1/K_ell(eta); e^{-(theta-eta)L} M_L(theta) -> K_r(theta-eta)/K_ell(eta) (theta>eta). Hence M_L(lambda*) ~ C* e^{(lambda*-eta)L}, C* = G_+(lambda*-eta)/G_-(eta).",
+   "evidence": [
+    "levy_qsd_restart.pdf",
+    "verify.py",
+    "checks/verification.json"
+   ]
+  },
+  {
+   "id": "ratio-one-false",
+   "location": "Proposition 2.9, Section 7",
+   "status": "proof",
+   "statement": "C*=1 for Brownian motion with drift; C* = eta^2 v/(2 kappa_inf) < 1 for spectrally negative X with jumps; C* > 1 for spectrally positive X with jumps.",
+   "evidence": [
+    "levy_qsd_restart.pdf",
+    "negative_controls.py"
+   ]
+  },
+  {
+   "id": "source-model-constant",
+   "location": "Proposition 2.9(iv)",
+   "status": "certified",
+   "statement": "For psi(s) = -s + s^2/2 - 3s/(1+s) + 2s/(4-s): C* in [0.85014864899051539225, 0.85014864899051539226]; R* = 0.90610442568089392543...",
+   "evidence": [
+    "e4_ratio_one.py",
+    "checks/e4_ratio_one.json",
+    "double_exponential_prefactor.py",
+    "checks/prefactor_decimal.txt"
+   ]
+  },
+  {
+   "id": "restart-rate-saturation",
+   "location": "Theorem 2.6, Section 6",
+   "status": "proof",
+   "statement": "Idealised QSD restart: p_L(B) = 1 - exp(-r_L B) (source Lemma 6.2), r_L ~ R* e^{-eta L}, R* = (m_-/m_+) phi_+(eta)^2; sup_{B>0} |p_L(B)/(1-exp(-R* B e^{-eta L})) - 1| <= |a_L - 1| -> 0; the failure probability is not uniformly approximated in relative terms.",
+   "evidence": [
+    "levy_qsd_restart.pdf",
+    "verify.py",
+    "checks/verification.json"
+   ]
+  },
+  {
+   "id": "corrected-budget-range",
+   "location": "Corollary 2.7, Remark 2.8",
+   "status": "proof",
+   "statement": "The two-sided bound (17) of the source's Theorem 3.14 holds along B_L (with liminf psi'(lambda*) B_L / L > 1) iff B_L = O(e^{eta L}); its ratio tends to 0 if B_L e^{-eta L} -> infinity. An exact Brownian example inside the source's Corollary 3.15 refutes the stated range B = o(e^{lambda* L}).",
+   "evidence": [
+    "levy_qsd_restart.pdf",
+    "verify.py",
+    "checks/saturation_counterexample.csv"
+   ]
+  },
+  {
+   "id": "spectrally-negative-no-gaussian",
+   "location": "Theorem 8.1, Corollary 8.2",
+   "status": "proof under (Q); numerical scale-function checks",
+   "statement": "Spectrally negative X with sigma >= 0 satisfying the cumulant conditions and scale-function positivity (Q): all moment and restart conclusions hold with C* = eta^2 psi''(eta)/(2 kappa_inf) <= 1 and R* = eta^2 psi''(eta)/2. (Q) holds when the laws of X_t are absolutely continuous; for compound-Poisson-plus-drift models it is checked numerically.",
+   "evidence": [
+    "levy_qsd_restart.pdf",
+    "e2_spectrally_negative.py",
+    "checks/e2_spectrally_negative.json"
+   ]
+  },
+  {
+   "id": "finite-L-corrections",
+   "location": "Theorems 9.1, 9.2",
+   "status": "proof given QSD-density regularity (F1); second-order constants numerical",
+   "statement": "Source model: L^2 alpha_L = (pi^2 v/2)(L/(L+delta))^2 + O(L^-2), delta = delta_+ + delta_- = 0.302842199807; C_L/C*, R_L/R* = 1 + g/L + O(L^-2), g = (pi^2/2)(delta_- - delta_+) = 0.497397109519.",
+   "evidence": [
+    "levy_qsd_restart.pdf",
+    "e1_effective_length.py",
+    "checks/e1_effective_length.json"
+   ]
+  },
+  {
+   "id": "general-effective-length",
+   "location": "Conjecture 9.9",
+   "status": "exploratory",
+   "statement": "The same first-order formulas hold for the whole class.",
+   "evidence": [
+    "e2_spectrally_negative.py",
+    "checks/e2_spectrally_negative.json"
+   ]
+  }
+ ],
+ "exclusions": [
+  "No claim for two-sided pure-jump processes or random walks.",
+  "No claim about Fleming-Viot or other approximate QSD sampling, restart overhead, or discrete monitoring (heuristic remarks only).",
+  "No historical-priority claim."
+ ]
+}

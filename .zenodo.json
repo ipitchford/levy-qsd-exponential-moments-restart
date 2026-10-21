@@ -1,0 +1,49 @@
+{
+  "title": "Exact exponential moments of interval quasi-stationary laws for Lévy processes, and the saturation of idealised QSD restart",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> Restarting a simulation from a quasi-stationary distribution (QSD) is a simple way to look for a rare high level L of a process that drifts away from it, in rare-event simulation and in exploration for model-free simulation. Garcia, Bermolen, Jonckheere and Shneer (Stochastic Systems, 2026) showed that the efficiency of idealised QSD restart is governed by an exponential moment of the QSD on (0, L) and conjectured that it grows like e^{(&lambda;*&minus;&eta;)L}, as for Brownian motion.</p><p>For L&eacute;vy processes with a Gaussian component and jumps of either sign, this package proves exact normalised limits of every exponential moment of the interval QSD, with constants given by ladder-height exponents of the Esscher-centred process; the core input is an exact L<sup>&minus;2</sup> asymptotic for the two boundary layers of the centred QSD. The conjecture holds on the logarithmic scale and up to constants, but its ratio-one reading fails: the constant C* is below one for every spectrally negative process with jumps, above one for every spectrally positive one, and 0.85014864899&hellip; in the source's own example (interval arithmetic). Idealised QSD restart has success rate asymptotic to R* e^{&minus;&eta;L}; the curve 1 &minus; exp(&minus;R* B e^{&minus;&eta;L}) is accurate uniformly in the budget B in relative error, so the linear budget regime of the source's restart theorem is B = O(e^{&eta;L}), not B = o(e^{&lambda;*L}). The moment theorem is extended to spectrally negative processes without a Gaussian part, and the first-order finite-L corrections are identified in the source model.</p><p>The archive contains the manuscript (PDF and LaTeX), deterministic Python check scripts (an interval-arithmetic enclosure, exact rational and Brownian checks, 70&ndash;85-digit constants and labelled numerics), committed outputs and figures, a replay script that compares every data output byte for byte, semantic negative controls and SHA-256 sums. Assurance: written proofs; certified and exact checks; producer-side replay, including a clean full replay in a separate copy; internal AI-assisted review, AI-assisted adversarial review (OpenAI gpt-5.6-sol) and a verification re-review. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Prose, manuscript and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23545672",
+  "publication_date": "2026-10-21",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "quasi-stationary distribution",
+    "Lévy processes",
+    "rare-event simulation",
+    "restart",
+    "Esscher transform",
+    "Wiener–Hopf factorisation",
+    "ladder heights",
+    "Fleming–Viot"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/levy-qsd-exponential-moments-restart/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/levy-qsd-exponential-moments-restart/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1287/stsy.2025.0108",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.3150/bj/1155735927",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Original code (Python scripts, CI workflow) is released under the MIT licence; see LICENSES.md in the archive. Short quotations of the source remain the source authors' text."
+}

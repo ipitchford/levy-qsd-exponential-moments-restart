@@ -1,0 +1,45 @@
+target_id: levy_interval_qsd_sharp_moments_and_restart
+version: revised_2026-10-21
+author: Anonymous
+status: complete_written_proofs_with_deterministic_computational_checks
+labels:
+  proof: complete written proof in the manuscript
+  certified: exact rational or outward-rounded interval arithmetic
+  numerical: high-precision computation, not a proof
+  exploratory: conjecture or heuristic supported by computation
+assumptions:
+  - Real Levy process with strictly positive Gaussian coefficient sigma.
+  - psi(s) = log E exp(s X_1) finite on [0, s_max).
+  - Interior Cramer root 0 < lambda_star < s_max, psi(lambda_star) = 0.
+  - eta = unique minimiser of psi on (0, lambda_star).
+notation:
+  kappa_inf: -psi(eta)
+  v: psi''(eta)
+  chi: chi(s) = psi(eta + s) - psi(eta)
+  wiener_hopf: chi(s) = -phi_plus(-s) * phi_minus(s); m_plus * m_minus = v/2
+  endpoint_constants: K_ell(b) = pi^2 m_plus / (2 b phi_plus(b)); K_r(b) = pi^2 m_minus / (2 b phi_minus(b))
+source:
+  paper: Garcia, Bermolen, Jonckheere and Shneer (2026), Efficiency of Parallel and Restart Exploration Strategies in Model-Free Stochastic Simulations, Stochastic Systems
+  doi: https://doi.org/10.1287/stsy.2025.0108
+  open_version: https://arxiv.org/abs/2503.03565v3
+  locators_arxiv_v3: {conjecture: paragraph after Corollary 3.15, restart_theorem: Theorem 3.14 (journal Theorem 4), brownian_corollary: Corollary 3.15 (journal Corollary 2), restart_law: Lemma 6.2 (journal Lemma 5), faulty_step: Proof 6.4}
+claims:
+  endpoint_masses: {statement: "L^2 A_L(-b) -> K_ell(b), L^2 e^{-bL} A_L(b) -> K_r(b) for all b > 0", label: proof}
+  moments: {statement: "M_L(theta) -> K_ell(eta-theta)/K_ell(eta) (theta<eta); M_L(eta)/L^2 -> 1/K_ell(eta); e^{-(theta-eta)L} M_L(theta) -> K_r(theta-eta)/K_ell(eta) (theta>eta)", label: proof}
+  conjecture_verdicts: {logarithmic: true, two_sided: true, ratio_limit: "true, C_* = G_plus(lambda_star-eta)/G_minus(eta)", ratio_one: false}
+  ratio_one_signs: {statement: "C_* = 1 Brownian; C_* < 1 spectrally negative with jumps (C_* = eta^2 v/(2 kappa_inf)); C_* > 1 spectrally positive with jumps", label: proof}
+  restart_rate: {statement: "r_L ~ R_* e^{-eta L}, R_* = (m_minus/m_plus) phi_plus(eta)^2", label: proof}
+  uniform_relative_saturation: {statement: "sup_{B>0} |p_L^R(B)/(1-exp(-R_* B e^{-eta L})) - 1| <= |a_L - 1| -> 0; failure probability not uniformly approximated", label: proof}
+  corrected_budget_range: {statement: "source display (17) holds iff B_L = O(e^{eta L}) (given liminf psi'(lambda_star) B_L / L > 1); ratio -> 0 if B_L e^{-eta L} -> infinity", label: proof}
+  spectrally_negative_no_gaussian: {statement: "spectrally negative X, sigma >= 0, under scale-function positivity (Q): all moment and restart conclusions with C_* = eta^2 psi''(eta)/(2 kappa_inf) <= 1, R_* = eta^2 psi''(eta)/2", label: "proof (Q automatic under absolutely continuous laws); numerical scale-function checks"}
+  finite_L_source_model: {statement: "source model: alpha_L = pi^2 v/(2(L+delta)^2) + c4 pi^4/L^4 + O(L^-5), delta = delta_+ + delta_- = 0.302842199807; C_L/C_*, R_L/R_* = 1 + g/L + O(L^-2), g = (pi^2/2)(delta_- - delta_+) = 0.497397109519", label: "proof conditional on unproved QSD-density regularity (F1); second-order constants numerical; general class exploratory"}
+  recovered: [subcritical limit = Kyprianou-Palmowski half-line formula, sine law, kappa_L = kappa_inf + pi^2 v/(2 L^2) + o(L^-2), LDP rate eta*u, critical window]
+fingerprints:
+  source_model_cumulant: "-s + s^2/2 - 3s/(1+s) + 2s/(4-s)"
+  C_star_source_model: "0.85014864899051539225331520696175796035"
+  R_star_source_model: "0.90610442568089392543976608949528924931"
+  brownian: {C_star: 1, R_star: kappa_inf}
+exclusions:
+  - No claim for two-sided pure-jump processes or random walks.
+  - No claim about Fleming-Viot or other approximate QSD sampling, restart overhead, or discrete monitoring (heuristic remarks only).
+  - No historical-priority claim.

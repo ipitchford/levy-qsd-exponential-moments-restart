@@ -1,0 +1,440 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 21 October 2026 at publication from the internal dated prior-art records (first and second formula-first novelty passes, search and inspection date 20 October 2026, with exact query strings), the bibliography-verification and Lotov-school prior-art check made during the revision (21 October 2026; its searches are recorded as topic descriptions rather than exact query strings, and are quoted here as such), and the retained internal review records. Those records are kept privately because they contain working notes. The 20 October searches predate the revision; no separate formula-first search was recorded for the units added in revision (the sign of C*-1, the spectrally negative extension and the effective-length theorem), so their entries cite the earlier searches whose aliases cover them, together with the 21 October checks, and say so. The file documents the scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Exact L^-2 endpoint masses of the Esscher-centred interval QSD: L^2 A_L(-b) -> K_l(b) and L^2 e^{-bL} A_L(b) -> K_r(b) for every b > 0, with K_l, K_r written through the ascending and descending ladder-height exponents (Theorem 2.3)",
+   "unit": "statement",
+   "paperLocation": "abstract; Section 1.4; Theorem 2.3; Section 4",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"quasi-stationary\" \"overshoot\" \"interval\"; \"quasi-stationary\" \"ladder\" \"finite interval\"; \"Lévy\" \"ground state\" \"renewal\" boundary; \"eigenfunction\" \"ladder height\" interval; \"Lévy\" \"boundary layer\" \"eigenfunction\"; \"principal eigenfunction\" \"renewal function\" interval; Lévy finite interval principal eigenfunction asymptotic renewal function large interval",
+     "corpus": "two public-web search engines, then primary full texts (strengthened second-pass query log, sections B and C)"
+    },
+    {
+     "date": "2026-10-20",
+     "query": "\"Perron eigenvector\" \"Toeplitz\" \"asymptotic\"; \"principal eigenfunction\" \"large\" \"interval\" \"nonlocal\" drift; Kwasnicki eigenvalues interval large interval subordinate Brownian boundary renewal function; Levy killed interval eigenfunction small eigenvalue renewal asymptotic Wiener Hopf",
+     "corpus": "two public-web search engines; full texts of Ponomarev (2021), García-Melián–Rossi (2009), Du–Fang–Ni (2025), Kwaśnicki (2011), Grzywny (2019)"
+    },
+    {
+     "date": "2026-10-21",
+     "query": "Topic check, not an exact string: Lotov and Lotov–Khodzhibaev widening-strip exit asymptotics; Kadankova–Veraverbeke two-boundary problems; recent work (2024-2026) on QSDs of Lévy processes on growing intervals",
+     "corpus": "web, Semantic Scholar (rate-limited), zbMATH Open, Crossref; Khodzhibaev (2014) monograph and Kadankova–Veraverbeke (2007) full texts"
+    }
+   ],
+   "closestPriorWork": "Kyprianou–Palmowski (2006) Theorem 1 gives the half-line Yaglom density eta phi_+(eta) e^{-eta y} V_+(y), which is the shape of the left layer but not its L^-2 normalisation on a growing interval; Ponomarev (2021) and the Widom line give sine bulks with boundary layers for even convolution kernels; Grzywny (2019) Theorem 9 gives renewal-function bounds for expected interval exit times; Lotov–Khodzhibaev expand exit-time transforms for widening strips. No inspected source states the endpoint-mass normalisation",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Critical and supercritical exponential moments of the interval QSD with explicit constants: M_L(eta)/L^2 -> 1/K_l(eta) and e^{-(theta-eta)L} M_L(theta) -> C(theta) = K_r(theta-eta)/K_l(eta), in particular M_L(lambda_*) ~ C* e^{(lambda_*-eta)L} with C* = G_+(lambda_*-eta)/G_-(eta) (Theorem 2.2), answering the source's conjecture on the logarithmic, two-sided and ratio-limit readings",
+   "unit": "statement",
+   "paperLocation": "abstract; Sections 1.2-1.3, Table 2; Theorem 2.2; Section 5",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"10.1287/stsy.2025.0108\" \"quasi\"; \"Efficiency of Parallel and Restart\" conjecture solution; \"quasi-stationary\" \"Esscher\" interval moments; quasistationary distribution Cramer tilt exponential moments; \"quasi-stationary\" \"lambda_0\" \"lambda\" \"moment\" Levy interval",
+     "corpus": "two public-web search engines; publisher full text and arXiv v3 of the source (first-pass search log, sections A and B)"
+    },
+    {
+     "date": "2026-10-20",
+     "query": "\"quasi-stationary\" \"exponential moments\" \"interval\"; \"quasi-stationary\" \"critical\" \"moment\" \"Lévy\"; quasi stationary distribution exponential tilt moment phase transition expanding domain; \"10.1287/stsy.2025.0108\" conjecture (365-day recency filter); \"2503.03565\" quasi stationary asymptotics (365-day recency filter)",
+     "corpus": "two public-web search engines (second-pass query log, sections A and B)"
+    },
+    {
+     "date": "2026-10-21",
+     "query": "Topic check, not an exact string: works citing Garcia et al. (arXiv or journal) and recent literature on exponential moments of interval QSDs",
+     "corpus": "Semantic Scholar citation listing, web"
+    }
+   ],
+   "closestPriorWork": "Garcia, Bermolen, Jonckheere and Shneer (2026), the paragraph after Corollary 3.15 of arXiv:2503.03565v3, pose the conjecture and suggest the Esscher/scale-function route; Kyprianou–Palmowski (2006) give the subcritical half-line limit, which the paper recovers and credits. No resolution of the conjecture was located; the only listed citing work was identified by title only",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Recovered and standard consequences: the subcritical limit (theta < eta), the sine law, kappa_L = kappa_inf + pi^2 v/(2L^2) + o(L^-2), the exit split Q_L -> 1/2, the LDP with rate eta*u and the critical window (Corollary 2.5)",
+   "unit": "statement",
+   "paperLocation": "Corollary 2.5; Proposition 3.2; Section 1.6; Table 3 (recovered tier)",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"quasi-stationary\" \"expanding intervals\"; \"Lévy\" \"principal eigenvalue\" \"Brownian\" convergence interval; quasi stationary Levy process sin pi scaling limit finite variance; \"quasi-stationary\" \"large deviations\" \"interval\" Levy; \"On the principal eigenvalue of some nonlocal diffusion problems\" large domain eigenfunction",
+     "corpus": "two public-web search engines; full texts of Kyprianou–Palmowski, García-Melián–Rossi, Du–Fang–Ni"
+    },
+    {
+     "date": "2026-10-21",
+     "query": "Topic check, not an exact string: Lotov (1979), Lotov–Khodzhibaev (1998/99), Khodzhibaev (2014) expansions of exit-time transforms and exit-side laws as the strip widens",
+     "corpus": "zbMATH Open reviews; Khodzhibaev (2014) monograph full text; Crossref and SIAM metadata"
+    }
+   ],
+   "closestPriorWork": "Kyprianou–Palmowski (2006) for the subcritical limit; García-Melián–Rossi (2009) and Du–Fang–Ni (2025) for large-domain principal eigenvalues; the Lotov school for widening-strip exit asymptotics from which the kappa_L expansion and Q_L -> 1/2 plausibly follow. The paper claims none of these as new",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Proof technique: Esscher centring at eta, then a uniform killed invariance principle giving the sine bulk, then stationary ladder overshoots at interval exits, then a stopped exponential (Dynkin) identity converting endpoint masses into exit transforms, then a Wiener–Hopf cancellation and a tightness plus Laplace-uniqueness extension to all b > 0",
+   "unit": "method",
+   "paperLocation": "Section 1.4; Sections 3-4 (Lemmas 3.1, 4.1-4.4, Proposition 3.2)",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"quasi-stationary\" \"invariance principle\"; \"quasi-stationary\" \"Donsker\"; \"Esscher\" \"quasi-stationary\" \"finite\"; \"quasi-stationary\" \"stationary overshoot\"; \"quasi-stationary\" \"renewal function\" interval limit; \"ground state\" \"ladder height\" asymptotic",
+     "corpus": "two public-web search engines; full texts of Kyprianou–Palmowski, Groisman–Jonckheere, Döring–Trottner (accepted manuscript), Kolb–Savov"
+    }
+   ],
+   "closestPriorWork": "Each ingredient is classical and credited: the Esscher tilt (suggested by the source; Kyprianou–Palmowski 2006; Groisman–Jonckheere 2018), stationary overshoots and Vigon's identities (Döring–Trottner 2023; Vigon 2002; Bertoin–van Harn–Steutel 1999), diffusive eigenvalue scaling (García-Melián–Rossi 2009). The combination that matches them to the interval QSD was not found",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Idealised QSD restart: r_L ~ R* e^{-eta L} with R* = (m_-/m_+) phi_+(eta)^2, and uniform relative-error saturation sup_{B>0} |p_L^R(B)/(1-exp(-R* B e^{-eta L})) - 1| <= |a_L - 1|, while the failure probability is not uniformly approximated (Theorem 2.6)",
+   "unit": "statement",
+   "paperLocation": "abstract; Theorem 2.6; Section 6; Section 11",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"quasi-stationary\" \"restart\" \"Poisson\" exit; \"Efficiency of Parallel and Restart\" conjecture quasi stationary (recent filter)",
+     "corpus": "two public-web search engines; full texts of Garcia et al. and Zbik–Palmowski (2026)"
+    }
+   ],
+   "closestPriorWork": "The exact restart law 1 - e^{-r_L B} is the source's (Lemma 6.2 of arXiv v3, journal Lemma 5); Zbik–Palmowski (2026) study exogenous Poisson resetting to a fixed point, a different protocol. The constant R* and the uniform relative bound were not located",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Corrected budget range of the source's restart theorem: its display (17) holds if and only if B_L = O(e^{eta L}) (given liminf psi'(lambda_*) B_L/L > 1), the normalised ratio tends to 0 when B_L e^{-eta L} -> infinity, and an exact Brownian example refutes the stated range B = o(e^{lambda_* L}) and the source's Corollary 3.15 (Corollary 2.7, Remark 2.8, Section 10.1)",
+   "unit": "statement",
+   "paperLocation": "abstract; Corollary 2.7; Remark 2.8; Section 10.1",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"Efficiency of Parallel and Restart\" conjecture solution; \"10.1287/stsy.2025.0108\" conjecture (365-day recency filter)",
+     "corpus": "two public-web search engines; publisher full text (Theorem 4, Corollary 2, Lemma 5, proof of Theorem 4) and arXiv v3"
+    },
+    {
+     "date": "2026-10-21",
+     "query": "Topic check, not an exact string: works citing Garcia et al. (arXiv or journal)",
+     "corpus": "Semantic Scholar citation listing"
+    }
+   ],
+   "closestPriorWork": "Garcia et al. (2026), Theorem 3.14 and Proof 6.4 of arXiv v3 (journal Theorem 4), which contain the challenged inference; no published correction was located",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Ratio-one reading of the conjecture fails: G_+(lambda_*-eta) >= 1 and G_-(eta) >= 1, with equality iff there are no jumps of that sign, so C* = 1 for Brownian motion, C* < 1 for every spectrally negative and C* > 1 for every spectrally positive process with jumps; interval enclosure of C* = 0.85014864899... < 1 in the source's model (Proposition 2.9, Appendix B)",
+   "unit": "statement",
+   "paperLocation": "abstract; Table 2; Proposition 2.9; Section 7; Appendix B",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"quasi-stationary\" \"overshoot\" \"constant\"; \"quasi stationary\" \"overshoot\" exponential moment; \"Efficiency of Parallel and Restart\" conjecture solution",
+     "corpus": "two public-web search engines; source full text. No dedicated search for the sign statement was recorded, because it was added in revision"
+    }
+   ],
+   "closestPriorWork": "The source remarks that the Brownian case is exact; the sign argument uses Vigon's identity (Vigon 2002; Döring–Trottner 2023, Theorem 5.3). No statement on the value or sign of the constant was found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Spectrally negative processes with sigma >= 0 under the scale-function positivity condition (Q): unique interval QSD with density proportional to W^{(-kappa_L)}(L-x), all moment and restart conclusions with C* = eta^2 psi''(eta)/(2 kappa_inf) <= 1 and R* = eta^2 psi''(eta)/2 (Theorem 8.1, Corollary 8.2)",
+   "unit": "statement",
+   "paperLocation": "abstract; Section 2.4; Theorem 8.1; Corollary 8.2; Section 8",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "Lambert 2000 completely asymmetric Lévy processes confined finite interval pdf; Kyprianou Palmowski 2006 Quasi stationary distributions Lévy processes pdf",
+     "corpus": "public-web search; full texts of Lambert (2000), Kyprianou–Palmowski (2006), Yamato (2023)"
+    },
+    {
+     "date": "2026-10-21",
+     "query": "Topic check, not an exact string: re-reading of Lambert (2000) Theorem 2.1 and its attribution to Bertoin (1997); Bertoin (1997) metadata",
+     "corpus": "Lambert (2000) full text; Crossref; the Bertoin (1997) full text was not reachable"
+    }
+   ],
+   "closestPriorWork": "Bertoin (1997), as restated in Lambert (2000) Theorem 2.1, gives the finite-interval QSD of a spectrally negative process with absolutely continuous laws through W^{(-rho)}; Kyprianou–Palmowski (2006) give the half-line spectrally negative QSD. The growing-interval moment and restart constants were not found",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Effective length and first-order finite-L corrections in the source model, assuming (F1): alpha_L = pi^2 v/(2(L+delta)^2) + c_4 pi^4/L^4 + O(L^-5) with delta = delta_+ + delta_- the sum of mean stationary overshoots, and C_L/C*, R_L/R* = 1 + g/L + O(L^-2) with g = (pi^2/2)(delta_- - delta_+) (Theorems 9.1-9.2)",
+   "unit": "statement",
+   "paperLocation": "abstract; Section 9; Theorems 9.1-9.2; Remark 9.7",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "Levy killed interval eigenfunction small eigenvalue renewal asymptotic Wiener Hopf; \"Lévy\" \"eigenfunction\" \"large interval\" renewal; random walk killed interval principal eigenfunction renewal function asymptotic",
+     "corpus": "two public-web search engines (second-pass query log, sections B and C). No dedicated effective-length search was recorded, because the unit was added in revision"
+    },
+    {
+     "date": "2026-10-21",
+     "query": "Topic check, not an exact string: Lotov–Khodzhibaev asymptotic expansions of the exit-time Laplace transform as the strip widens; Khodzhibaev (2014) complete expansions under Cramér conditions",
+     "corpus": "zbMATH Open reviews; Khodzhibaev (2014) monograph (abstract, introduction, Section 1, theorem statements of Sections 4 and 6)"
+    }
+   ],
+   "closestPriorWork": "The Lotov school's asymptotic expansions for widening strips (Lotov 1979; Lotov–Khodzhibaev 1998/99; Khodzhibaev 2014) are the closest related work for the eigenvalue correction. Lotov (1979) was not accessible, and the 1998/99 papers were read through reviews only. No statement of the effective length L + delta_+ + delta_- or of the common 1/L coefficient g was found in what was read",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Finite-L technique for rational-symbol models: four-mode reduction of the forward equation, determinant decoupling into a slow-root phase condition, and a parity argument showing that the boundary layers enter only at relative order L^-2",
+   "unit": "method",
+   "paperLocation": "Section 9 (Lemmas 9.3-9.6); Section 10.2",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "Kwasnicki eigenvalues interval large interval subordinate Brownian boundary renewal function; \"boundary layer\" \"renewal function\"; \"Perron eigenvector\" \"Toeplitz\" \"asymptotic\"",
+     "corpus": "two public-web search engines; full texts of Ponomarev (2021), Kwaśnicki (2011)"
+    }
+   ],
+   "closestPriorWork": "Exact finite-interval exit identities for exponential and phase-type jumps (Kadankova–Veraverbeke 2007; Asmussen–Avram–Pistorius 2004, first passage); Wiener–Hopf large-interval analysis of convolution equations (Ponomarev 2021). The decoupling and parity step is presented as a technique, not as a priority claim",
+   "verdict": "partially-known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Garcia, Bermolen, Jonckheere and Shneer, Efficiency of Parallel and Restart Exploration Strategies in Model-Free Stochastic Simulations, Stochastic Systems 16(3), 264-288 (2026), DOI 10.1287/stsy.2025.0108",
+   "usedFor": "Source of the conjecture and of the restart theorem whose budget range is corrected; journal numbering (Theorem 4, Corollary 2, Lemma 5)",
+   "readWhat": "Publisher full text: Section 3.2 assumptions, Section 3.4 QSD definition and the conjecture paragraph, Theorem 4, Corollary 2, Lemma 5, the double-exponential example, Section 4.1, and the first paragraph of the proof of Theorem 4. The publisher page could not be reopened on 21 October (bot check), so the journal number of Lemma 6.1 is unverified",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://doi.org/10.1287/stsy.2025.0108; manuscript Section 1.2 and Table 1"
+  },
+  {
+   "citation": "Garcia, Bermolen, Jonckheere and Shneer, arXiv:2503.03565v3 (6 May 2026)",
+   "usedFor": "Verbatim quotations and open-version numbering: the conjecture after Corollary 3.15, Theorem 3.14 with display (17), Corollary 3.15, Lemmas 5.1, 6.1 and 6.2, and Proof 6.4",
+   "readWhat": "HTML full text, Sections 2, 3.2, 3.4 and 6; quotations checked against the LaTeX alt-text",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://arxiv.org/abs/2503.03565v3; manuscript Sections 1.2, 2.3 (Corollary 2.7, Remark 2.8)"
+  },
+  {
+   "citation": "Kyprianou and Palmowski, Quasi-stationary distributions for Lévy processes, Bernoulli 12(4), 571-581 (2006)",
+   "usedFor": "Half-line Yaglom law recovered as the subcritical limit; notation dictionary (theta_0 = eta, kappa_{theta_0}(0,.) = phi_+, V_{theta_0} = V_+)",
+   "readWhat": "Author PDF: Definitions 1-2, Theorem 1 (p. 574), Examples 1-3, Lemma 3 and the final Laplace-transform proof; the Theorem 1 dictionary re-verified on 21 October",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://doi.org/10.3150/bj/1155735927; manuscript Section 1.6 and Corollary 2.5"
+  },
+  {
+   "citation": "Lambert, Completely asymmetric Lévy processes confined in a finite interval, Ann. Inst. H. Poincaré Probab. Statist. 36(2), 251-274 (2000)",
+   "usedFor": "Scale-function description of the spectrally negative interval QSD (Bertoin's theorem as restated in Lambert's Theorem 2.1), used for hypothesis (Q) and Theorem 8.1",
+   "readWhat": "Introduction, Theorems 2.1 and 3.1, the supremum-convergence section and the references; Theorem 2.1 re-read on 21 October. Some scanned formulas were poorly extracted",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://doi.org/10.1016/S0246-0203(00)00126-6; https://www.numdam.org/item/AIHPB_2000__36_2_251_0/; manuscript Section 8"
+  },
+  {
+   "citation": "Kolb and Savov, Exponential ergodicity of killed Lévy processes in a finite interval, Electron. Commun. Probab. 19, paper 31 (2014)",
+   "usedFor": "Fixed-interval existence and uniqueness of the QSD; boundary of overlap (fixed L only)",
+   "readWhat": "Theorem 2.1 and Remark 2.2 (PDF pp. 2-3), Sections 3.2-3.3, the boundary-regularity argument before Section 4.3, Section 4.3 and Lemma 4.3. Not re-read in the revision cycle",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://doi.org/10.1214/ECP.v19-3006; manuscript Remark 2.1 and Section 1.6"
+  },
+  {
+   "citation": "Döring and Trottner, Stability of overshoots of Markov additive processes, Ann. Appl. Probab. 33(6B), 5413-5458 (2023), author accepted manuscript",
+   "usedFor": "Stationary overshoot law, aperiodicity under positive ladder drift, overshoot convergence, Vigon-type identities and d_+ d_- = sigma^2/2",
+   "readWhat": "Theorem 3.3, Proposition 3.8(i), Theorem 3.10, Theorem 5.3 with (5.3)-(5.6), Lemma 5.11; arXiv v2 numbering map recorded on 21 October. The published PDF could not be opened",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://doi.org/10.1214/23-AAP1951; manuscript Section 4.1"
+  },
+  {
+   "citation": "Vigon, Simplifiez vos Lévy en titillant la factorisation de Wiener-Hopf, PhD thesis, INSA Rouen (2002)",
+   "usedFor": "Équation amicale and its inverse, used in Lemma 4.1 and in the sign argument of Proposition 2.9",
+   "readWhat": "Chapter 5, Section 5.1, pp. 70-71 (statement of the équations amicales), and Corollary 5.1.2",
+   "date": "2026-10-21",
+   "evidenceLocator": "HAL tel-00567466; manuscript Sections 4.1 and 7"
+  },
+  {
+   "citation": "Kadankova and Veraverbeke, On several two-boundary problems for a particular class of Lévy processes, J. Theor. Probab. 20, 1073-1085 (2007)",
+   "usedFor": "Positioning against exact two-boundary transforms",
+   "readWhat": "arXiv full text (math/0701924): exact transforms only, for compound Poisson processes with exponential negative jumps and no Gaussian part; no large-interval asymptotics",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://arxiv.org/abs/math/0701924; manuscript Section 1.6"
+  },
+  {
+   "citation": "Khodzhibaev, On the asymptotics of distributions related to the exit of a process with independent increments from an interval, monograph, Fan va texnologiya, Tashkent (2014, in Russian)",
+   "usedFor": "Positioning of the kappa_L expansion and the exit-side asymptotics against the Lotov school",
+   "readWhat": "Partial reading only: abstract, introduction pp. 3-7, Section 1 assumptions, theorem statements of Sections 4 and 6 (including Theorem 6.2, diffusive regime); the mathematical text was partly garbled in extraction",
+   "date": "2026-10-21",
+   "evidenceLocator": "PDF located through ziyonet.uz; manuscript Section 1.6"
+  },
+  {
+   "citation": "Grzywny, First exit times from a bounded interval for Lévy processes, arXiv:1911.05022 (2019)",
+   "usedFor": "Closest renewal-function interval estimate (Theorem 9), cited for positioning and the cheap two-sided route",
+   "readWhat": "Introduction, ladder-renewal definitions, Theorem 9 and its proof (zero-mean and lower-scaling hypotheses), Theorem 6, opening of Section 4",
+   "date": "2026-10-21",
+   "evidenceLocator": "https://arxiv.org/abs/1911.05022; manuscript Sections 1.5-1.6"
+  },
+  {
+   "citation": "García-Melián and Rossi, On the principal eigenvalue of some nonlocal diffusion problems, J. Differential Equations 246(1), 21-38 (2009)",
+   "usedFor": "Precedent for diffusive scaling of large-domain principal eigenvalues (symmetric kernels)",
+   "readWhat": "Author PDF: Theorems 5-6 and the large-domain proof around (4.5)-(4.8). The theorem number is not used in the manuscript, because the full text could not be reopened on 21 October",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://doi.org/10.1016/j.jde.2008.04.015; manuscript Section 1.6"
+  },
+  {
+   "citation": "Ponomarev, Asymptotic solution to convolution integral equations on large and small intervals, Proc. R. Soc. A 477, 20210025 (2021), author preprint",
+   "usedFor": "Mechanism precedent: sine bulk with Wiener–Hopf boundary layers for even kernels",
+   "readWhat": "Abstract, Assumptions 1-4, Theorem 3.1, formulas (3.29)-(3.32) and the concluding limitations",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://doi.org/10.1098/rspa.2021.0025; manuscript Section 1.6"
+  },
+  {
+   "citation": "Du, Fang and Ni, Asymptotic limit of the principal eigenvalue of asymmetric nonlocal diffusion operators and propagation dynamics, arXiv:2503.22062v2 (2025)",
+   "usedFor": "Precedent for large-interval principal eigenvalues of asymmetric kernels",
+   "readWhat": "Main spectral statement, operator conventions, principal-eigenfunction statements and references",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://arxiv.org/abs/2503.22062v2; manuscript Section 1.6"
+  },
+  {
+   "citation": "Zbik and Palmowski, Asymptotic behaviour for escaping an interval by Lévy flights under stochastic resetting, arXiv:2610.20410v1 (2026)",
+   "usedFor": "Distinguishing exogenous Poisson resetting from lower-exit-triggered QSD restart",
+   "readWhat": "Full retrieved HTML; model Section II, stable-flight results, spectrally negative Section III.2 and conclusion",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://arxiv.org/abs/2610.20410v1; manuscript Section 1.6"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Restart results assume exact, free, independent QSD draws and continuous monitoring; Fleming–Viot or other approximate sampling, restart overhead and discrete monitoring are treated only heuristically",
+   "closingQuestion": "Can a quantitative bound for Fleming–Viot-sampled restart be obtained from existing QSD convergence theory (e.g. Champagnat–Villemonais) at the scale e^{eta L}?",
+   "triedOrSearched": "Section 11 gives the burn-in heuristic (order L^2/v) and the discretisation remark, both labelled heuristic; the perspective review raised the question",
+   "estimatedCost": "research project",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Requires a separate analysis of the particle system and the monitoring error",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "No result for random walks, including the random-walk case of the source's restart theorem, whose corrected budget range is not addressed",
+   "closingQuestion": "Do the endpoint masses and Corollary 2.7 hold for non-lattice random walks under a Cramér condition?",
+   "triedOrSearched": "A lattice diagnostic (Section 10.3, Appendix A) is consistent with the sine law but proves nothing; arithmetic issues in the overshoot limits are identified in Section 12",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Needs discrete ladder and overshoot inputs in place of the Gaussian-component arguments",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "No result for two-sided pure-jump processes; sigma > 0 is used in four places (Lemma 4.1, Lemma 4.2, Remark 2.1, Lemma 4.3)",
+   "closingQuestion": "Which substitute (bounded renewal density, non-lattice ladder heights) replaces positive ladder drifts?",
+   "triedOrSearched": "Spectrally negative case done (Theorem 8.1); the four uses are listed in Section 12",
+   "estimatedCost": "research project",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "The one-sided scale-function route does not apply to two-sided jumps",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Hypothesis (Q) for compound-Poisson-plus-drift models (no absolutely continuous laws) is checked only numerically on grids, so C* = 1/sqrt(2) for psi(s) = s - 2s/(1+s) is stated conditionally",
+   "closingQuestion": "For this rational model the scale function is an explicit two-term exponential sum: can positivity of W^{(-rho_L)} on (0,L) and simplicity of the root be proved by hand for all large L?",
+   "triedOrSearched": "Grid checks of the sign of W^{(-alpha)}(L) and of positivity of the density at every L used; a second compound-Poisson model checked in the verification round; the text was relabelled as conditional",
+   "estimatedCost": "a few hours, analysis only",
+   "cheap": true,
+   "decision": "OPEN",
+   "reasonOpen": "Analytic proof not attempted",
+   "whyNotClosedNow": "Identified in the final adversarial audit; the second revision chose conditional labelling (Section 2.4, Section 8, Table 3, abstract) instead of a new proof, and no claim in the paper depends on (Q) holding for this model"
+  },
+  {
+   "limitation": "The effective-length theorems (Theorems 9.1-9.2) assume the regularity fact (F1) (C^2 density solving the forward equation with Dirichlet traces), which is neither proved nor tied to a cited theorem",
+   "closingQuestion": "Does a regularity theorem for uniformly elliptic integro-differential Dirichlet problems with bounded kernels (e.g. Garroni–Menaldi 1992) give (F1) exactly, or can the four-mode candidate be shown directly to be the QSD (Dynkin argument plus uniqueness)?",
+   "triedOrSearched": "Garroni–Menaldi identified as a candidate citation in the verification re-review but not checked; the statements were relabelled 'conditional on (F1)'",
+   "estimatedCost": "1-2 days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Requires either checking a specific regularity theorem's hypotheses or a direct verification argument",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Second-order finite-L constants h_C and h_R are numerical, not in closed form",
+   "closingQuestion": "Do the even functions Q_C, Q_R of Theorem 9.2 have closed-form second derivatives at omega = 0?",
+   "triedOrSearched": "70-digit solver up to L = 10240 with residuals below 1e-60; values labelled numerical",
+   "estimatedCost": "days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Symbolic evaluation of the boundary-layer functionals not attempted",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Conjecture 9.9: the effective-length formulas for the whole class of Theorem 2.2",
+   "closingQuestion": "Does the parity argument extend beyond rational symbols?",
+   "triedOrSearched": "Supported outside the proof class by two spectrally negative scale-function models (the 1/L coefficients agree to 6-8 digits)",
+   "estimatedCost": "research project",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Labelled exploratory; a general proof needs a new argument",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Step 3 of the proof of Theorem 8.1 states finiteness of the integral over (0, infinity) of e^{sw} times the tail of Pi, which can fail near zero for unbounded-variation jumps; only the tail beyond R is needed",
+   "closingQuestion": "Restrict the displayed integral to w > R",
+   "triedOrSearched": "Raised in the final adversarial audit and judged repairable there; not changed in the released text",
+   "estimatedCost": "15 min, editing only",
+   "cheap": true,
+   "decision": "OPEN",
+   "reasonOpen": "Text not amended in the second revision",
+   "whyNotClosedNow": "The candidate was frozen after the second revision. The bound actually used, the tail integral over (R, infinity), is finite under the stated hypotheses, so no conclusion changes; recorded for the next version"
+  },
+  {
+   "limitation": "The interval certificate of C* (Appendix B) relies on the closed form of a_+ and a_- as an algebraic identity; the four-point factorisation check is a consistency test",
+   "closingQuestion": "Verify the factorisation identity symbolically, with eta symbolic subject to psi'(eta) = 0",
+   "triedOrSearched": "Closed form checked numerically to about 1e-58 in the verification round; the certificate prints outward-rounded endpoints",
+   "estimatedCost": "1 h, no compute",
+   "cheap": true,
+   "decision": "OPEN",
+   "reasonOpen": "Symbolic check not added",
+   "whyNotClosedNow": "The second revision documented the dependence instead (Appendix B and the script docstring). The identity is exact algebra stated in Section 10.2, and the sign C* < 1 is far outside the numerical error"
+  },
+  {
+   "limitation": "The journal-version number of the source's Lemma 6.1 was not re-verified",
+   "closingQuestion": "Does the journal numbering match the mapping in Table 1?",
+   "triedOrSearched": "Theorem 4, Corollary 2 and Lemma 5 are taken from the 20 October reading of the publisher full text; arXiv v3 numbering is used throughout",
+   "estimatedCost": "15 min with access",
+   "cheap": true,
+   "decision": "OPEN",
+   "reasonOpen": "Publisher page behind a bot check on 21 October",
+   "whyNotClosedNow": "The challenge was not bypassed; only a locator label is affected, and the arXiv v3 number is given"
+  },
+  {
+   "limitation": "Some classical sources were checked only second-hand: Bertoin (1997), via Lambert's restatement; Lotov (1979) and Lotov (2016), not accessible; Lotov–Khodzhibaev (1998/99), through zbMATH reviews; Kolb–Savov, not re-read in the revision",
+   "closingQuestion": "Do Lotov (1979) or Lotov–Khodzhibaev (1998) already state the kappa_L expansion or the endpoint information?",
+   "triedOrSearched": "Khodzhibaev (2014) and Kadankova–Veraverbeke (2007) read; kappa_L and Q_L -> 1/2 relabelled as standard or recovered and not claimed",
+   "estimatedCost": "about 1 day with library access and Russian-language reading",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Full texts not accessible from this environment",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "The source's authors have not been told of the budget-range correction",
+   "closingQuestion": "Would the authors agree with the corrected range B_L e^{-eta L} -> 0?",
+   "triedOrSearched": "Raised by the editor role; treated as an editorial matter",
+   "estimatedCost": "under 1 h",
+   "cheap": true,
+   "decision": "OPEN",
+   "reasonOpen": "External correspondence requires the owner's decision",
+   "whyNotClosedNow": "Not authorised in this workflow; the correction is stated with verbatim quotations so the authors can check it"
+  },
+  {
+   "limitation": "Finite-L tables, the lattice diagnostic and the figures are numerical",
+   "closingQuestion": "Are the quoted values stable and reproducible?",
+   "triedOrSearched": "Deterministic scripts; byte-identical replay of every data output in a separate copy; independent recomputation of constants and of L^2 alpha_L in review",
+   "estimatedCost": "1 h",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": "Closed as far as needed: the values are labelled numerical and no proof uses them"
+  }
+ ],
+ "extensionScout": {
+  "by": "internal AI-assisted first-round review (editor, methodology, domain, perspective and devil's-advocate roles) and AI-assisted adversarial review (OpenAI gpt-5.6-sol)",
+  "date": "2026-10-21",
+  "proposals": [
+   "E1 prove the O(1/L) effective-length correction, at least for the source model",
+   "E2 go beyond the Gaussian component (spectrally negative via scale functions, or random walks)",
+   "E3 uniform relative-error saturation theorem",
+   "E4 rigorous proof that the ratio-one reading fails in general",
+   "Corrected statement of the source's restart theorem, with Corollary 3.15",
+   "Practitioner cost comparison and QSD-sampling cost remark",
+   "Spectrally negative cross-check of C* by scale functions"
+  ],
+  "actions": [
+   "E1 proved for the source model conditional on (F1) (Theorems 9.1-9.2); second-order constants numerical; general class stated as Conjecture 9.9",
+   "E2 spectrally negative processes with sigma >= 0 proved under (Q) (Theorem 8.1); random walks and two-sided pure-jump processes left open",
+   "E3 proved (Theorem 2.6(iii)); negative result for the failure probability (Theorem 2.6(iv))",
+   "E4 proved with the sign of C* - 1 by jump direction (Proposition 2.9); interval enclosure for the source model (Appendix B)",
+   "Corollary 2.7 and Remark 2.8 added",
+   "Section 11 and Table 7 added; Fleming–Viot and discretisation remarks labelled heuristic",
+   "Done in Section 8 (C* = eta^2 psi''(eta)/(2 kappa_inf)); checked numerically in two models"
+  ]
+ }
+}
